@@ -1,3 +1,64 @@
+#my-info {
+	padding: 1rem;
+}
+
+.logo {
+	margin-bottom: 1em;
+}
+
+.role {
+	font-size: 1.5em;
+}
+
 body {
-	background: rgb(21, 24, 26);
+	background: #E8E9EA;
+}
+
+.callout.primary {
+	background: #E8E9EA;
+	border: none;
+}
+
+.thumbnail {
+	border: none;
+}
+
+.project {
+	border: 5px solid #eee;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	box-shadow: 0 0 0.5em #646464;
+	position: relative;
+	width: 200px;
+}
+
+.project h5,
+.project p {
+	padding: 0 0.5em 0;
+}
+
+.project button {
+	margin-left: 0.5em;
+	position: absolute;
+	bottom: 0;
+}
+
+/* .image { */
+	/* max-height: 100%; */
+	/* max-width: 100%; */
+/* } */
+
+.image img {	
+	width: 230px;
+	height: 230px;
+	object-fit: cover;
+	/* object-position: center center; */
+}
+
+.languages {
+	margin-bottom: 5em;
+}
+
+footer {
+	text-align: center;
 }

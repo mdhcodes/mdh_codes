@@ -1,58 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mdhCodes_ | Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <!-- optional CDN for Foundation Icons ^^ -->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
+      <div class="grid-y grid-padding-x" style="height: 100%;">
+        <br>
+        <div class="cell shrink">
+          <!-- <img class="thumbnail" src="https://placehold.it/550x350"> -->
+        </div>
+        <div class="cell auto">
+          <h2 class="logo">mdhCodes_</h2>
+          <h3 class="role">Full Stack Developer</h3>
+          <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="title-bar hide-for-large">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-toggle="my-info"></button>
+          <span class="title-bar-title">mdhCodes_</span>
+        </div>
+      </div>
+    
+    
+      <div class="callout primary">
+        <article class="grid-container">
+          <div class="">
+            <h1>Hi! I’m Michelle,</h1>
+            <p class="lead">a full stack developer who enjoys crafting responsive and user friendly websites and web applications.</p>
+          </div>
+        </article>
+      </div>
+    
+      <hr>
 
-<html lang="en" dir="ltr">
+      <article class="projects grid-container">
+        <h4>Projects</h4>
+        <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/waves.jpg">
+            </div>            
+            <h5><a href="#">Learning in Nature</a></h5>
+            <p>COMING SOON</p>
+            <p class="languages">Python, Django, SQLite, JavaScript, Bootstrap, HTML5, CSS3</p>
+            <button class="button" type="button" data-toggle="learn-in-nature-description">Description</button>
+            <div class="dropdown-pane top" id="learn-in-nature-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>Learning in Nature.</p>
+              <p>More information</p>
+            </div>
+          </div>
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/waves.jpg">
+            </div>
+            <h5><a href="#">Virtual Museum Visit</a></h5>
+            <p>COMING SOON</p>
+            <p class="languages">Python, Django, SQLite, JavaScript, Bootstrap, HTML5, CSS3</p>
+            <button class="button" type="button" data-toggle="next-project-description">Description</button>
+            <div class="dropdown-pane top" id="next-project-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>Virtual Museum Visit</p>
+              <p>More information</p>
+            </div>
+          </div>
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/waves.jpg">
+            </div>
+            <h5><a href="#">My Site</a></h5>
+            <p class="languages">Languages</p>
+            <button class="button" type="button" data-toggle="next-project2-description">Description</button>
+            <div class="dropdown-pane top" id="next-project2-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>COMING SOON</p>
+              <p>More information</p>
+            </div>
+          </div>
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/central_park.jpg">
+            </div>
+            <h5><a href="#">Turtle Adventures</a></h5>
+            <p class="languages">Python, Flask, SQLite, JavaScript, Bootstrap, HTML5, CSS3</p>
+            <button class="button" type="button" data-toggle="turtle-adventures-description">Description</button>
+            <div class="dropdown-pane top" id="turtle-adventures-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>Turtle Adventures is a website application that helps users disconnect from their devices and connect with nature by finding information about parks, getting outside, and going for a walk.</p>
+              <p>Turtle Adventures is great way to explore NYC parks. This application allows users to browse parks by borough and access more information stored in the NYC Parks Properties API. Users create an account by selecting a username and password which gives them access to the website. The app returns all NYC parks which can then be sorted by borough. Users may click on a park name to access its website for more information.</p>
+            </div>
+          </div>
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/park.jpg">
+            </div>
+            <h5><a href="#">Nature Walk</a></h5>
+            <p class="languages">JavaScript, Node, Express, Bootstrap, HTML5, CSS3</p>
+            <button class="button" type="button" data-toggle="nature-walk-description">Description</button>
+            <div class="dropdown-pane top" id="nature-walk-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>Nature Walk is a web application developed for children to encourage them to explore the outdoors.</p>
+              <p>JavaScript requests data from the Simple Wikipedia API which delivers a response that is parsed to extract the information needed to fulfill the project requirements (website functionality) and user stories (what the user should be able to do when interacting with an application or a website). JavaScript accesses this data and manipulates the DOM to dynamically populate the screen with the selected content. A custom Google Search field is included for users to expand their learning.</p>
+              <p>Nature Walk allows children to learn about life forms they might find in the woods. My hope is that Nature Walk will:</p>
+              <ul>
+                <li>Inspire children to ask their parents and family members to go on adventures and explore the outdoors.</li>
+                <li>Promote care and respect for the environment.</li>
+                <li>Reignite curiosity in the adults who join the adventure and remind them how much fun it is to connect with nature.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell project">
+            <div class="image">
+              <img class="thumbnail" src="assets/img/platter1.jpg">
+            </div>
+            <h5><a href="https://www.spiraltwists.com">Spiral Twists</a></h5>
+            <p class="languages">HTML5, CSS3, JavaScript, Bootstrap</p>
+            <button class="button" type="button" data-toggle="spiral-twists-description">Description</button>
+            <div class="dropdown-pane top" id="spiral-twists-description" data-dropdown data-hover="true" data-hover-pane="true">
+              <p>Spiral Twists is a digital gallery of my work as a potter.</p>
+              <p>Starting with a mobile first approach, all images were scaled down to improve performance and media queries were added to adjust the layout for different screen sizes. The links change appearance when a user hovers over them to indicate an interaction is possible. CSS3 transition and transform properties animate the gallery categories. JavaScript controls the display of the navigation bar by responding to the user when the menu button is clicked.</p>
+            </div>
+          </div>
+          
+        </div>
+    
+        <hr>
+    
+        <div class="contact grid-x grid-margin-x">
+          <div class="medium-6 cell">
+            <h3>Contact Me</h3>
+            <p>I look forward to connecting with you!</p>
+            <ul class="menu">
+              <!-- <li><a href="#">LinkedIn</a></li> -->
+              <!-- <li><a href="#">GitHub</a></li> -->
+              <li><a href="#" class="webicon linkedin">LinkedIn</a></li>
+              <li><a href="#" class="webicon github">GitHub</a></li>
+              <!-- <li><a href="#"></a>Stack Overflow</li> -->
+            </ul>
+          </div>
+          <div class="medium-6 cell">
+            <label>Name
+              <input type="text" placeholder="Name">
+            </label>
+            <label>Email
+              <input type="text" placeholder="Email">
+            </label>
+            <label>
+              Message
+              <textarea placeholder="Share your thoughts"></textarea>
+            </label>
+            <input type="submit" class="button expanded" value="Submit">
+          </div>
+        </div>
+        
+      <hr>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>mdhCodes_ | Portfolio Website</title>
-		<meta name="description" content="mdhCodes_ | Portfolio Website">
+      </article>
+    </div>
 
-		<!-- Bootstrap 5 -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
 
-		<!-- Favicon-->
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		
-		<!-- Google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
-  
-		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/styles.css">
+    <footer class="off-canvas-content" data-off-canvas-content>
+    <div class="grid-container">
+        <!-- <div class="cell"> -->
+        <p>Thank you for visiting!</p>
+        <p>© 2024 <a href="http://www.mdhcodes.com/">mdhCodes</a> <i class="fi-heart" style="color: #CC0000;"></i></p>
+    </div>
+    </footer>
 
-	</head>
 
-	<body>
-
-		<header class="container">
-			<div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-				<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
-					<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-					<div class="logo fs-2">mdhCodes<span>_</span></div>
-				</a>
-			</div>
-
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-				<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-				<li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-			</ul>
-		</header>
-
-	</body>
-
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
